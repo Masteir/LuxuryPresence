@@ -389,20 +389,135 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Portfolio Section -->
+  
+    <section id="tabs" class="tabs section light-background">
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
+      <div class="container">
+        
+        <div class="row gap-x-lg-4 justify-content-between">
+               <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>The Selling Process</h2>
         <p>The Selling Process</p>
       </div><!-- End Section Title -->
 
-   
+          <div class="col-lg-4 js-custom-dots">
+            
+            <a href="#" class="service-item link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+              <div class="service-icon color-1 mb-4">
+                <i class="bi bi-1-square"></i>
+              </div>
+              <!-- /.icon -->
+               
+              <div class="service-contents">
+                <h3>INITIAL CONSULTATION & PLANNING</h3>
+                </div>
+            </a>
+            <!-- /.service -->
 
-    </section><!-- /Testimonials Section -->
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="100">
+              <div class="service-icon color-2 mb-4">
+                <i class="bi bi-2-square"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>DEVISE & EXECUTE MARKETING PLAN </h3>
+                
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="200">
+              <div class="service-icon color-3 mb-4">
+                <i class="bi bi-3-square"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>REVIEW OFFERS & REACH AGREEMENT WITH BUYER</h3>
+                
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="300">
+              <div class="service-icon color-4 mb-4">
+                <i class="bi bi-4-square"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>COMPLETE TRANSACTION PROCESS</h3>
+                
+              </div>
+              <!-- /.service-contents-->
+            </a>
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="300">
+              <div class="service-icon color-4 mb-4">
+                <i class="bi bi-5-square"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>AFTER-SALE PROCESS</h3>
+                
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+          </div>
+
+          <div class="col-lg-8">
+            <div class="swiper init-swiper-tabs">
+
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img 
+                  src="assets/img/Selling.jpg" 
+                  alt="Image" 
+                  style="
+                      height: 500px; /* Adjust the height as needed */
+                      object-fit: cover;
+                      width: 100%; /* Optional: adjust the width as needed */
+                      overflow: hidden; /* Hide any overflow if needed */
+                  "
+              > 
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all service items
+  const serviceItems = document.querySelectorAll('.service-item.link');
+  
+  let currentIndex = 0; // Initialize index to keep track of the active tab
+
+  function changeTab() {
+    // Remove active class from all items
+    serviceItems.forEach(service => service.classList.remove('active'));
+
+    // Add active class to the current item
+    serviceItems[currentIndex].classList.add('active');
+
+    // Move to the next tab
+    currentIndex = (currentIndex + 1) % serviceItems.length;
+  }
+
+  // Set the initial active tab
+  changeTab();
+
+  // Automatically change tabs every 5 seconds (5000 milliseconds)
+  setInterval(changeTab, 1200);
+});
+</script>
+
+    </section><!-- /Tabs Section -->
+    
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
@@ -420,6 +535,7 @@
 
     </section><!-- /Pricing Section -->
 
+   
     <section id="work-with-us" class="call-to-action section dark-background"  style="
     background-image: url('assets/img/servicebg.jpg'); /* Replace with your image path */
     background-size: cover;
