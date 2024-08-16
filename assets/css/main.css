@@ -259,7 +259,37 @@ h6 {
   color: var(--heading-color);
 }
 
+.number-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  justify-content: center;
+}
+.number-item {
+  text-align: center;
+  margin: 0 20px; /* Space between numbers */
+}
+.number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333; /* Dark gray color */
+  background-color: #e0e0e0; /* Light gray background for numbers */
+  padding: 15px;
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space between number and description */
+}
 
+.description {
+  font-size: 1rem;
+  color: #666; /* Medium gray color for descriptions */
+  margin-top: 20px; /* Space between number and description */
+}
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -946,21 +976,26 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
 .about ul {
   list-style: none;
   padding: 0;
+  
 }
 
 .about ul li {
   padding-bottom: 5px;
   display: flex;
   align-items: center;
+  
 }
+
 
 .about ul i {
   font-size: 20px;
   padding-right: 4px;
   color: var(--accent-color);
+  
 }
 
 .about .read-more {
